@@ -1,11 +1,11 @@
 import socket
-from http import HTTPStatus
+from http        import HTTPStatus
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from ssl         import wrap_socket as ssl_wrap_socket
 from json        import loads as json_loads
 
-from lib.pyHTTPInterface import Request, HTTPMethods
-from lib.pyGenericPath.URL import URL
+from pyGenericPath.URL  import URL
+from pyHTTPInterface    import Request, HTTPMethods
 
 
 class HTTPRequestHandler(BaseHTTPRequestHandler):
