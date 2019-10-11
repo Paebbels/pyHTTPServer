@@ -43,7 +43,7 @@ with open("README.md", "r") as file:
 
 setuptools.setup(
 	name="pyHTTPServer",
-	version="0.1.1",
+	version="0.1.2",
 	author="Patrick Lehmann",
 	author_email="Paebbels@gmail.com",
 	description="An HTTP Server implementation offering a pyHTTPInterface.",

@@ -1,4 +1,4 @@
-from .WebServer import Server
+from .HTTPServer import Server
 
 __api__ = [
 	"Server"
