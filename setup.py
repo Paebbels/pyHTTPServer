@@ -11,9 +11,9 @@
 #  |_|    |___/
 #
 # =============================================================================
-# Authors:						Patrick Lehmann
+# Authors:            Patrick Lehmann
 #
-# Python package:	    An HTTP Server implementation offering a pyHTTPInterface.
+# Package installer:  An HTTP Server implementation offering a pyHTTPInterface.
 #
 # Description:
 # ------------------------------------
@@ -41,19 +41,42 @@ import setuptools
 with open("README.md", "r") as file:
 	long_description = file.read()
 
+requirements = []
+with open("requirements.txt") as file:
+	for line in file.readlines():
+		requirements.append(line)
+
+projectName = "pyHTTPServer"
+
+github_url =  "https://github.com/Paebbels/" + projectName
+rtd_url =     "https://" + projectName + ".readthedocs.io/en/latest/"
+
 setuptools.setup(
-	name="pyHTTPServer",
-	version="0.1.2",
+	name=projectName,
+	version="0.1.3",
+
 	author="Patrick Lehmann",
 	author_email="Paebbels@gmail.com",
+	# maintainer="Patrick Lehmann",
+	# maintainer_email="Paebbels@gmail.com",
+
 	description="An HTTP Server implementation offering a pyHTTPInterface.",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
-	url="https://github.com/Paebbels/pyHTTPServer",
+
+	url=github_url,
+	project_urls={
+		'Documentation': rtd_url,
+		'Source Code':   github_url,
+		'Issue Tracker': github_url + "/issues"
+	},
+	# download_url="",
+
 	packages=setuptools.find_packages(),
 	classifiers=[
 		"License :: OSI Approved :: Apache Software License",
 		"Operating System :: OS Independent",
+		"Programming Language :: Python :: 3 :: Only",
 		"Programming Language :: Python :: 3.5",
 		"Programming Language :: Python :: 3.6",
 		"Programming Language :: Python :: 3.7",
@@ -62,7 +85,13 @@ setuptools.setup(
 		#		"Development Status :: 3 - Alpha",
 		#		"Development Status :: 4 - Beta",
 		#		"Development Status :: 5 - Production/Stable",
+		"Topic :: Internet :: WWW/HTTP :: HTTP Servers",
 		"Topic :: Utilities"
 	],
+	keywords="Python3 HTTP-Server",
+
 	python_requires='>=3.5',
+	install_requires=requirements,
+	# provides=
+	# obsoletes=
 )

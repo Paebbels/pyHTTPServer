@@ -9,7 +9,7 @@
 
 # pyHTTPServer
 
-Description
+An HTTP Server implementation offering a pyHTTPInterface.
 
 
 ## Contributors:
