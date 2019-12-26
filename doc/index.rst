@@ -1,26 +1,29 @@
+.. code-block::
+
+                  _   _ _____ _____ ____  ____
+      _ __  _   _| | | |_   _|_   _|  _ \/ ___|  ___ _ ____   _____ _ __
+     | '_ \| | | | |_| | | |   | | | |_) \___ \ / _ \ '__\ \ / / _ \ '__|
+     | |_) | |_| |  _  | | |   | | |  __/ ___) |  __/ |   \ V /  __/ |
+     | .__/ \__, |_| |_| |_|   |_| |_|   |____/ \___|_|    \_/ \___|_|
+     |_|    |___/
+
 pyHTTPServer Documentation
 ##########################
 
 An HTTP Server implementation offering a pyHTTPInterface.
 
 
-Installation/Updates
-********************
 
-Installation using PIP
-======================
+Contributors
+************
 
-.. code-block:: bash
-
-   pip3 install pyHTTPServer
+* `Patrick Lehmann <https://github.com/Paebbels>`_ (Maintainer)
 
 
-Updating using PIP
-==================
+License
+*******
 
-.. code-block:: bash
-
-   pip3 install -U pyHTTPServer
+This library is licensed under **Apache License 2.0**.
 
 ------------------------------------
 
@@ -30,6 +33,12 @@ Updating using PIP
 
    This document was generated on |docdate|.
 
+.. toctree::
+   :caption: Overview
+   :hidden:
+
+   Installation
+   Dependencies
 
 .. toctree::
    :caption: Classes
@@ -42,5 +51,8 @@ Updating using PIP
    :caption: Appendix
    :hidden:
 
+   License
    genindex
+
+.. #
    py-modindex
